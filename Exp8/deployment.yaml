@@ -1,0 +1,21 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: student-docker-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: student-docker-app
+  template:
+    metadata:
+      labels:
+        app: student-docker-app
+    spec:
+      containers:
+        - name: student-docker-container
+          image: student-docker-app:v1
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 5000

@@ -1,0 +1,11 @@
+S.No.	Command	Purpose
+1	docker ps	Displays running containers.
+2	docker run hello-world	Creates and runs a container using the hello-world image.
+3	docker start container_id	Starts a stopped container.
+4	docker stop container_id	Stops a running container.
+5	docker restart container_id	Restarts a container.
+6	docker ps -a	Displays all containers, including stopped ones.
+7	docker images	Lists downloaded and locally built images.
+8	docker pull nginx	Downloads the Nginx image from Docker Hub.
+9	docker rm container_id	Removes a stopped container.
+10	docker rmi image_name	Removes a Docker image.
